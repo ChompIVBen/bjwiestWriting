@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(233, 104, 142);
+  }
+  
+  h1 {
+    color: navy;
+  }
+
+  p {
+      color: yellow;
+  }
+  
+  p1{
+    color: rgb(63, 63, 63);
+    bottom: 0;
+
+  }
+  html {
+    text-align: center;
+  }
+  .topnav {
+    background: #1abc9c;
+    font-size: 30px;
+
+  }
+
+  .footer {
+    background: #1abc9c;
+    font-size: 15px;
+    text-align: center;
+    bottom: 0;
+    }
+/* The sidebar menu */
+.sidenav {
+  height: 350px; /* Full-height: remove this if you want "auto" height */
+  width: 175px; /* Set the width of the sidebar */
+  top: 10; /* Stay at the top */
+  left: 100;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  position: absolute;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  border-bottom: 3px solid rgb(231, 231, 2);
+
+}
+img {
+  height: 400px;
+  width: 400px;
+}
+
+a{
+  color: navy;
+}
+h3{
+  color:rgb(231, 231, 2);
+  border-bottom: 3px solid rgb(231, 231, 2);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>
+        B. J. Wiest Writing
+    </title>
+    <script>
+        window.onload = function () {
+            var title = sessionStorage.getItem("title");
+            var link = sessionStorage.getItem("link");
+            console.log(link)
+            console.log(title)
+            var iframe = document.getElementById('ifrm');
+            iframe.src = link;
+            var titleText = document.getElementById('title');
+            titleText.textContent = title;
+        }
+    </script>
+    <script src="app.js"></script>
+
+</head>
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="aboutContact.html">About & Contact</a>
+    <a href="donate.html">Donate</a>
+    <a href="iframe.html" onclick="getLinkAndTitle('Nothing at the moment.',
+         'http:/\/nooooooooooooooo.com/');">What
+        I'm Working On Stream</a>
+    <!--DRAFT 1: https:/\/docs.google.com/document/d/1n4EgDjzEMvMogEtRVyy5tayJzdDoeD4Oqa54dqSWYGk/edit?usp=sharing-->
+</div>
+</header>
+
+<body>
+    <h1 id='title'>[name var]</h1>
+    <iframe id='ifrm' src="" width="900" height="650" style="max-width:95%;border:3px solid black;"></iframe>
+    <br>
+    <div class="footer">
+        <p1>Everything on this site is protected by copyright</p1>
+    </div>
+</body>
+
+</html>
