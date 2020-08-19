@@ -3,4 +3,3 @@ function getLinkAndTitle(title, link) {
     sessionStorage.setItem("link", link);
     location.reload();
 }
-//testing commit
