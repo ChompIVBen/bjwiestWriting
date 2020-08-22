@@ -19,12 +19,23 @@
 
     <script>
         window.onload = function () {
-            var title = sessionStorage.getItem("title");
-            var link = sessionStorage.getItem("link");
-            var iframe = document.getElementById('ifrm');
-            iframe.src = link;
-            var titleText = document.getElementById('title');
-            titleText.textContent = title;
+            const hash = window.location.hash;// location object has page url components
+            // defaults for no match
+            let src = '', titleTxt = 'Bad link. Go \'Home\'.';
+            if (hash && hash !== '#') {
+                // remove the `#` from url hash
+                const hashSlug = hash.slice(1);
+                // use Array.prototype.find() to get matching item from array
+                const item = data.find(el => hashSlug === el.slug);
+                // if no match item is undefined
+                if (item) {
+                    // set corresponding values
+                    src = item.link;
+                    titleTxt = item.title
+                }
+            }
+            document.getElementById('title').innerText = titleTxt;
+            document.getElementById('ifrm').src = src;
         }
     </script>
     <script src="app.js"></script>
