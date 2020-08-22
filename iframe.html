@@ -12,7 +12,7 @@
         gtag('config', 'UA-175892896-1');
     </script>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <title id="siteTitle">
+    <title>
         B. J. Wiest Writing
     </title>
     <link rel="icon" href="images/me1.JPG">
@@ -35,8 +35,9 @@
                 }
             }
             document.getElementById('title').innerText = titleTxt;
-            document.getElementById('siteTitle').innerText - titleTxt;
+            document.title = titleTxt;
             document.getElementById('ifrm').src = src;
+
         }
     </script>
     <script src="app.js"></script>
