@@ -1,4 +1,5 @@
 const data = [
+    { title: 'concoctions', link: 'https://docs.google.com/document/d/1DwE81wLK9lcm1kkMFaZKXkgDFYmxfsQOv1jMHb8GjJ4/preview?usp=sharing', slug: 'concoctions' },
     { title: 'I was bringing humor to the room.', link: 'https:/\/docs.google.com/document/d/1EZZYQ4251VnAGsxuyWWp3HK5e2mQm-emNOR7NTGSJ80/preview?usp=sharing', slug: 'I-was-bringing-humor-to-the-room' },
     { title: 'Ambition, Duality, and Reality', link: 'https:/\/docs.google.com/document/d/13o8dvetnpMt4XgsgYa8fczunTcIm5RCbCjALQWx-mm4/preview?usp=sharing', slug: 'Ambition-Duality-and-Reality' },
     { title: 'The high working man', link: 'https:/\/docs.google.com/document/d/1zTVRpECpaG9RfEUdCVRy_vNwboXhXf0oAEwQeVBwTOk/preview?usp=sharing', slug: 'The-high-working-man' },
